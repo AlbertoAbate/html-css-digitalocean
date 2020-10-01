@@ -28,3 +28,17 @@ body {
   border-color: rgb(104, 140, 249);
   color: rgb(104, 140, 249);
 }
+
+
+@media screen and (max-width: 1199px) {
+  .navbar-toggle {
+        display: block;
+    }
+
+  .via {
+        display: none;
+    }
+  .navbar-toggle {
+      
+    }
+}
