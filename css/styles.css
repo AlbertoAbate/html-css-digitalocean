@@ -43,7 +43,7 @@ body {
 /* form */
 .jumbo-right form {
   background-color: #fff;
-  padding: 15px 10px;
+  padding: 30px 10px 10px;
   border-radius: 5px;
   position: relative;
 }
@@ -70,7 +70,29 @@ body {
   bottom: 64px;
 }
 
+/* main */
+/* prima section */
+/* loghi */
+.prima-section .loghi h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #5b698e;
+}
+.log li {
+  width: calc((100% / 2) - 10px);
+}
+.log li a img {
+  display: inline-block;
+  /* width: 140px; */
+  max-width: 100%;
 
+}
+
+@media screen and (min-width: 768px) {
+  .log li {
+    width: calc((100% / 6) - 10px);
+  }
+}
 @media screen and (max-width: 1199px) {
   .navbar-toggle {
         display: block;
@@ -82,7 +104,8 @@ body {
   .via {
         display: none;
     }
-  .navbar-toggle {
-
-    }
+    /* main */
+    /* prima section */
+  .log li a img {
+    margin: 0 auto;
 }
