@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.navbar-default {
+  background-color: #fff;
+  margin: 0;
+  border: 0;
+}
+.navbar-header img {
+  width: 180px;
+  padding: 22px 15px;
+}
+.main-header .navbar-nav > li > a {
+  line-height: 80px;
+  padding: 0 15px;
+  color: #1a1b4f;
+}
+.navbar-center {
+  margin-left: 150px;
+}
+.main-header .navbar-nav > li > a > i {
+  position: relative;
+  top: 1px;
+}
+.main-header .navbar-nav li button {
+  border-color: rgb(104, 140, 249);
+  color: rgb(104, 140, 249);
+}
