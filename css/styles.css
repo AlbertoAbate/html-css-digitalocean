@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+/* utilities */
 
 /* header */
 .navbar-default {
@@ -28,17 +29,60 @@ body {
   border-color: rgb(104, 140, 249);
   color: rgb(104, 140, 249);
 }
+/* jumbotron */
+.jumbotron {
+  background-image: url(../img/bg-banner-home.jpg);
+}
+.jumbotron h1 {
+  font-size: 55px;
+  color: #fff;
+}
+.jumbo-left p {
+  color: lightgrey;
+}
+/* form */
+.jumbo-right form {
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.jumbo-right form h4 {
+  font-size: 25px;
+}
+.jumbo-right form h3 {
+  color: #006aff;
+}
+.jumbo-right p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.jumbo-right p a {
+  text-decoration: underline;
+}
+/* .jumbo-right .btn-default {
+  position: relative;
+} */
+.jumbo-right img {
+  width: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 64px;
+}
 
 
 @media screen and (max-width: 1199px) {
   .navbar-toggle {
         display: block;
+        position: absolute;
+        right: 0;
+        top: 15%;
     }
 
   .via {
         display: none;
     }
   .navbar-toggle {
-      
+
     }
 }
