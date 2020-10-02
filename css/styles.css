@@ -161,7 +161,7 @@ p {
 .sesta-section {
   background-color: #f3f5f9;
 }
-.terza-section,
+.terza-section .slide img,
 .sesta-section .slide img {
   max-width: 60%;
   padding: 100px 0 40px 0;
@@ -259,6 +259,35 @@ td a i {
   padding: 15px 25px;
   color: rgb(0, 105, 255);
 }
+
+/* footer */
+footer {
+  padding: 50px 0;
+  background-color: #203154;
+}
+footer .proudly span {
+  display: block;
+  color: #807771;
+}
+footer .proudly p {
+  text-align: left;
+  font-size: 14px;
+}
+footer .social {
+  margin-top: 15px;
+}
+footer .social li a i {
+  color: #807771;
+}
+footer li {
+  color: #fff;
+  list-style: none;
+}
+footer li a {
+  color: #807771;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .log li {
