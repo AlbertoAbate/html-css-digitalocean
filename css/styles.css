@@ -18,6 +18,10 @@ p {
 .pad {
   padding-left: 0;
 }
+.pad-left-right {
+  padding-left: 20px;
+  padding-right: 140px;
+}
 /* header */
 .navbar-default {
   background-color: #fff;
@@ -153,17 +157,21 @@ p {
   padding-top: 20px;
 }
 /* terza section */
-.terza-section {
+.terza-section,
+.sesta-section {
   background-color: #f3f5f9;
 }
-.terza-section .slide img {
+.terza-section,
+.sesta-section .slide img {
   max-width: 60%;
   padding: 100px 0 40px 0;
 }
-.terza-section .slide p {
+.terza-section,
+.sesta-section .slide p {
   color: #031b4e;
 }
-.terza-section .slider {
+.terza-section,
+.sesta-section .slider {
   position: relative;
 }
 .angle-left,
@@ -196,6 +204,59 @@ p {
   position: relative;
   top: 2px;
   left: 8px;
+  color: rgb(0, 105, 255);
+}
+/* quinta section */
+.quinta-section,
+.settima-section {
+  padding: 50px 0;
+  background-color: #0505c0;
+}
+tr {
+  border-bottom: 1px solid #fff;
+}
+td:not(i) {
+  color: #fff;
+}
+td a i {
+  position: relative;
+  left: 3px;
+}
+.quinta-section h2 {
+  color: #fff;
+}
+.town {
+  line-height: 30px;
+  margin: 0 auto 20px auto;
+}
+/* sesta section */
+.sesta-section .slide {
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.sesta-section .slide a i {
+  position: relative;
+  left: 8px;
+  color: rgb(0, 105, 255);
+}
+.sesta-section .developments {
+  margin: 60px 0 80px 0;
+}
+.sesta-section .slide p {
+  color: #5b6991;
+}
+.sesta-section .slide span {
+  font-size: 16px;
+  color: #030815;
+}
+/* settima section */
+.settima-section .started h2 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+.settima-section button {
+  padding: 15px 25px;
   color: rgb(0, 105, 255);
 }
 
