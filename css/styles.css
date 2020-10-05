@@ -7,9 +7,6 @@ h2 {
   font-size: 36px;
   color: #031b4e;
 }
-/* h4 {
-  text-align: center;
-} */
 p {
   text-align: center;
   font-size: 20px;
@@ -163,31 +160,43 @@ p {
 }
 .terza-section .slide img,
 .sesta-section .slide img {
-  max-width: 60%;
+  max-width: 100%;
   padding: 100px 0 40px 0;
 }
 .terza-section,
 .sesta-section .slide p {
   color: #031b4e;
 }
-.terza-section,
+.terza-section .slider,
 .sesta-section .slider {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 50px;
   position: relative;
 }
-.angle-left,
-.angle-right {
+.slide .angle-left,
+.slide .angle-right {
   display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .slide .angle-left {
-  position: absolute;
-  left: 208px;
-  top: 300px;
+  left: 0;
   color: #647887;
 }
 .slide .angle-right {
-  position: absolute;
-  right: 208px;
-  top: 300px;
+  right: 0;
+
+}
+.pallini {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.color-fff {
+  color: #fff;
+  border: 1px solid #337ab7;
+  border-radius: 18px;
 }
 /* quarta section */
 .quarta-section {
@@ -231,7 +240,6 @@ td a i {
 }
 /* sesta section */
 .sesta-section .slide {
-  max-width: 50%;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -290,27 +298,51 @@ footer li a {
 .line {
   line-height: 25px;
 }
-
+/* tooltip */
+.squalo {
+  width: 283px;
+  padding: 10px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 140px;
+  border-radius: 5px;
+  line-height: 1.45;
+  filter: drop-shadow(0 1px 2px lightgrey);
+}
+.squalo::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.chat-img {
+  position: relative;
+}
+.chat-img img {
+  width: 110px;
+  position: absolute;
+  bottom: -11px;
+  left: 279px;
+}
 @media screen and (min-width: 768px) {
   .log li {
     width: calc((100% / 6) - 10px);
   }
   .slide .angle-left {
     display: block;
-    position: absolute;
-    left: 120px;
-    top: 230px;
     color: #647887;
   }
   .slide .angle-right {
     display: block;
-    position: absolute;
-    right: 100px;
-    top: 230px;
   }
 }
 @media screen and (min-width: 992px) {
-  .slide .angle-left {
+  /* .slide .angle-left {
     display: block;
     position: absolute;
     left: 130px;
@@ -322,7 +354,7 @@ footer li a {
     position: absolute;
     right: 100px;
     top: 270px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1199px) {
