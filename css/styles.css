@@ -25,6 +25,12 @@ p {
   margin: 0;
   border: 0;
 }
+.main-header button {
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2485fd;
+}
 .navbar-header img {
   width: 180px;
   padding: 22px 15px;
@@ -77,9 +83,6 @@ p {
 .jumbo-right p a {
   text-decoration: underline;
 }
-/* .jumbo-right .btn-default {
-  position: relative;
-} */
 .jumbo-right img {
   width: 25px;
   position: absolute;
@@ -133,18 +136,9 @@ p {
 .interno {
   padding: 40px 0;
 }
-.cluster p {
-  font-size: 12px;
-  text-align: left;
-}
-.optimizes p{
-  font-size: 12px;
-  text-align: left;
-}
-.one p {
-  font-size: 12px;
-  text-align: left;
-}
+.cluster p,
+.optimizes p,
+.one p,
 .global p {
   font-size: 12px;
   text-align: left;
@@ -180,6 +174,7 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 35px;
 }
 .slide .angle-left {
   left: 0;
@@ -187,7 +182,6 @@ p {
 }
 .slide .angle-right {
   right: 0;
-
 }
 .pallini {
   padding-top: 5px;
@@ -308,7 +302,7 @@ footer li a {
   right: 140px;
   border-radius: 5px;
   line-height: 1.45;
-  filter: drop-shadow(0 1px 2px lightgrey);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4););
 }
 .squalo::before {
   content: "";
@@ -329,6 +323,7 @@ footer li a {
   bottom: -11px;
   left: 279px;
 }
+
 @media screen and (min-width: 768px) {
   .log li {
     width: calc((100% / 6) - 10px);
@@ -340,21 +335,6 @@ footer li a {
   .slide .angle-right {
     display: block;
   }
-}
-@media screen and (min-width: 992px) {
-  /* .slide .angle-left {
-    display: block;
-    position: absolute;
-    left: 130px;
-    top: 270px;
-    color: #647887;
-  }
-  .slide .angle-right {
-    display: block;
-    position: absolute;
-    right: 100px;
-    top: 270px;
-  } */
 }
 
 @media screen and (max-width: 1199px) {
